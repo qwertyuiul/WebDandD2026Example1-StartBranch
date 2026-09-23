@@ -1,9 +1,17 @@
 
 <nav>
-     <ul>
-          <li ><a  class='{{#if state.home}}active{{/if}}' href='/'>Home</a></li>     
+     {{!-- <ul>
+          <li ><a  class='{{#if state.home}}active{{/if}}' href='index'>Home</a></li>     
+          <li><a class='{{#if state.contact}}active{{/if}}' href='gallery'>Gallery</a></li>
+          <li><a class='{{#if state.contact}}active{{/if}}' href='stats'>Stats</a></li>
           <li><a class='{{#if state.contact}}active{{/if}}' href='contact'>Contact</a></li>
+     </ul> --}}
 
+          <ul>
+          <li ><a href='/' class='{{#if state.contact}}active{{/if}}'>Home</a></li>     
+          <li><a  href='gallery' class='{{#if state.contact}}active{{/if}}'>Gallery</a></li>
+          <li><a  href='stats' class='{{#if state.contact}}active{{/if}}'>Stats</a></li>
+          <li><a  href='contact'  class='{{#if state.contact}}active{{/if}}'>Contact</a></li>
      </ul>
 </nav>
 

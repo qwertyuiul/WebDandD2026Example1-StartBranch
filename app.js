@@ -44,6 +44,14 @@ app.get('/', (req, res) => {
 
 });
 
+// gallery route
+app.get('/gallery', (req, res) => {
+    state={contact : true}
+    head={title:"gallery - Week 1"}
+    res.render('gallery', { state, head});
+    console.log('gallery')
+  });
+
 // contact route
 app.get('/contact', (req, res) => {
     state={contact : true}
@@ -51,7 +59,12 @@ app.get('/contact', (req, res) => {
     res.render('contact', { state, head});
     console.log('contact')
   });
-
+app.get('/stats', (req, res) => {
+    state={contact : true}
+    head={title:"satats - Week 1"}
+    res.render('stats', { state, head});
+    console.log('stats')
+  });
 
 // Start the server
 app.listen(3000, () => {
